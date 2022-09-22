@@ -1,7 +1,7 @@
 
 setwd("~/fall2022/Lab_05")
 install.packages("qqman")
-library("qqman",lib.loc="~")  
+library("qqman")  
 results_log <- read.table("logistic_results.assoc_2.logistic", head=TRUE)
 jpeg("Logistic_manhattan.jpeg")
 manhattan(results_log,chr="CHR",bp="BP",p="P",snp="SNP", main = "Manhattan plot: logistic")

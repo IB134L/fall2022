@@ -1,5 +1,7 @@
-#install.packages("qqman",repos="http://cran.cnr.berkeley.edu/",lib="~" ) # location of installation can be changed but has to correspond with the library location 
-library("qqman",lib.loc="~") 
+
+setwd("~/fall2022/Lab_05")
+install.packages("qqman")
+library("qqman") 
 results_log <- read.table("logistic_results.assoc_2.logistic", head=TRUE)
 jpeg("QQ-Plot_logistic.jpeg")
 qq(results_log$P, main = "Q-Q plot of GWAS p-values : log")
