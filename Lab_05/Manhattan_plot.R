@@ -1,4 +1,6 @@
-install.packages("qqman") 
+
+setwd("~/fall2022/Lab_05")
+install.packages("qqman")
 library("qqman",lib.loc="~")  
 results_log <- read.table("logistic_results.assoc_2.logistic", head=TRUE)
 jpeg("Logistic_manhattan.jpeg")
