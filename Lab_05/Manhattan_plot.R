@@ -1,4 +1,4 @@
-#install.packages("qqman",repos="http://cran.cnr.berkeley.edu/",lib="~" ) # location of installation can be changed but has to correspond with the library location 
+install.packages("qqman") 
 library("qqman",lib.loc="~")  
 results_log <- read.table("logistic_results.assoc_2.logistic", head=TRUE)
 jpeg("Logistic_manhattan.jpeg")
