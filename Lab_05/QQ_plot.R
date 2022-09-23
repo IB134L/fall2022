@@ -1,4 +1,3 @@
-
 setwd("~/fall2022/Lab_05")
 install.packages("qqman")
 library("qqman") 
